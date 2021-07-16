@@ -1,3 +1,7 @@
+# START - Huan's Comments
+# I love how you guys sectioned off the code and added blank lines for readability!
+# Apparently, I'm Naruto. 🍜 - END
+
 # the more point you get, more of an extrovert character you get
 # character = ["Naruto","Luffy","L", "Taki"]
 
@@ -12,6 +16,8 @@ question_3 = input("What word would your friends use to describe you? A) Leader 
 question_4 = input("What would you like to eat? A) Ramen B) Meat C) Desserts D) Pastries  ")
 question_5 = input("if you come across a problem, how would you solve it? A) Talk it out B) Make excuses/ Ignore it C) Find a solution alone D) Ask for help  ")
 
+# START - Huan's Comments:
+# If you find yourself writing similar code repeatedly, consider making it a function - END
 if question_1 == "A":
     choiceA_count +=1
 elif question_1 == "B":
@@ -57,8 +63,10 @@ elif question_5 == "C":
 elif question_5 == "D":
     choiceD_count +=1
 
-
-
+# START - Huan's Comments
+# Not a better way, but an alternative implementation could be storing each choice's count
+# in a list and using pre-built Python functions/methods to find the index of the max_value. 
+# Maybe this is what you were trying in the code commented out below? - END
 def your_character():
     if choiceA_count > choiceB_count and choiceA_count > choiceC_count and choiceA_count > choiceD_count:
         return "You are Naruto from Naruto!"
